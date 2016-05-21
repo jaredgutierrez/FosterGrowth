@@ -16,8 +16,10 @@ class SectionsCollectionViewCell: UICollectionViewCell {
     var delegate:SectionsCollectionViewCell? = nil
     
     
+    @IBOutlet weak var blackOverlay: UIImageView!
     @IBOutlet weak var SectionImg: UIImageView!
     
+    @IBOutlet weak var SectionTitle: UILabel!
     
     
     

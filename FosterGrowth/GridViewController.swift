@@ -11,7 +11,10 @@ import UIKit
 class GridViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,SectionsCollectionViewCellDelegate  {
 
     var mainSections = ["beforeInterview", "ipad", "resume", "textbook"]
-
+    var mainSectionTitles = ["Interview Questions", "Templates", "Resume Builder", "Cover Letters"]
+    
+    
+    
     @IBOutlet weak var SectionsGrid: UICollectionView!
     
     override func viewDidLoad() {
@@ -35,12 +38,31 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return 4
     }
     
+
     
-//    
-//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-//    
+    
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+        if (indexPath.row == 0){
+            self.performSegueWithIdentifier("toInterviewPrep", sender: indexPath)
+        }
+            
+        else if (indexPath.row == 1) {
+            self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
+        }
+        
+        else if (indexPath.row == 2) {
+            self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
+        }
+            
+        else if (indexPath.row == 3) {
+            self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
+        }
+    }
+    
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MainCell", forIndexPath: indexPath) as! SectionsCollectionViewCell
@@ -48,8 +70,10 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
 
         cell.SectionImg.image = UIImage(named: mainSections[indexPath.row])
+        cell.SectionTitle.text = mainSectionTitles[indexPath.row]
+        cell.blackOverlay.image = UIImage(named: "black")
         
-        cell.backgroundColor = UIColor.whiteColor();
+        cell.backgroundColor = UIColor.whiteColor()
         cell.layer.borderColor = UIColor.lightGrayColor().CGColor
         cell.layer.borderWidth = 1
         cell.layer.shadowOffset = CGSizeMake(0, 1)
