@@ -18,6 +18,8 @@
 		D840BDC61CF0BF5B005F86FA /* SectionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840BDC51CF0BF5B005F86FA /* SectionsCollectionViewCell.swift */; };
 		D840BDCA1CF0E2B3005F86FA /* StartBuildingResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840BDC91CF0E2B3005F86FA /* StartBuildingResumeViewController.swift */; };
 		D840BDCC1CF0E539005F86FA /* ProfessionalExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840BDCB1CF0E539005F86FA /* ProfessionalExperienceViewController.swift */; };
+		D840BDCE1CF0F682005F86FA /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840BDCD1CF0F682005F86FA /* VolunteerViewController.swift */; };
+		D840BDD01CF0FC9F005F86FA /* FinalResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840BDCF1CF0FC9F005F86FA /* FinalResumeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D840BDC51CF0BF5B005F86FA /* SectionsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D840BDC91CF0E2B3005F86FA /* StartBuildingResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartBuildingResumeViewController.swift; sourceTree = "<group>"; };
 		D840BDCB1CF0E539005F86FA /* ProfessionalExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceViewController.swift; sourceTree = "<group>"; };
+		D840BDCD1CF0F682005F86FA /* VolunteerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
+		D840BDCF1CF0FC9F005F86FA /* FinalResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalResumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				D840BD951CF0BC55005F86FA /* AppDelegate.swift */,
 				D840BD971CF0BC55005F86FA /* ViewController.swift */,
 				D840BD991CF0BC55005F86FA /* Main.storyboard */,
+				D840BDCF1CF0FC9F005F86FA /* FinalResumeViewController.swift */,
+				D840BDCD1CF0F682005F86FA /* VolunteerViewController.swift */,
 				D840BDCB1CF0E539005F86FA /* ProfessionalExperienceViewController.swift */,
 				D840BDC91CF0E2B3005F86FA /* StartBuildingResumeViewController.swift */,
 				D840BDC31CF0BD77005F86FA /* GridViewController.swift */,
@@ -275,7 +281,9 @@
 				D840BD981CF0BC55005F86FA /* ViewController.swift in Sources */,
 				D840BD961CF0BC55005F86FA /* AppDelegate.swift in Sources */,
 				D840BDC41CF0BD77005F86FA /* GridViewController.swift in Sources */,
+				D840BDD01CF0FC9F005F86FA /* FinalResumeViewController.swift in Sources */,
 				D840BDCA1CF0E2B3005F86FA /* StartBuildingResumeViewController.swift in Sources */,
+				D840BDCE1CF0F682005F86FA /* VolunteerViewController.swift in Sources */,
 				D840BDCC1CF0E539005F86FA /* ProfessionalExperienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

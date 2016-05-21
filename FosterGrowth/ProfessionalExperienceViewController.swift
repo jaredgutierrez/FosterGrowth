@@ -9,7 +9,20 @@
 import UIKit
 
 class ProfessionalExperienceViewController: UIViewController {
+    @IBOutlet weak var company1: UITextField!
+    @IBOutlet weak var date1: UITextField!
+    @IBOutlet weak var description1: UITextField!
     
+    @IBOutlet weak var company2: UITextField!
+    @IBOutlet weak var date2: UITextField!
+    @IBOutlet weak var description2: UITextField!
+    
+    @IBOutlet weak var company3: UITextField!
+    @IBOutlet weak var date3: UITextField!
+    @IBOutlet weak var description3: UITextField!
+    
+    
+    @IBOutlet weak var continue2: UIButton!
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -30,6 +43,40 @@ class ProfessionalExperienceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vd = segue.destinationViewController as! VolunteerViewController
+        let inputcompany1 = company1.text
+        let inputdate1 = date1.text
+        let inputdescription1 = description1.text
+        let inputcompany2 = company2.text
+        let inputdate2 = date2.text
+        let inputdescription2 = description2.text
+        let inputcompany3 = company3.text
+        let inputdate3 = date3.text
+        let inputdescription3 = description3.text
+        let inputuser = username
+        let inputemail = email
+        let inputphone = phone
+        let inputaddress = address
+        
+        vd.company1 = inputcompany1!
+        vd.description1 = inputdescription1!
+        vd.date1 = inputdate1!
+        vd.company2 = inputcompany2!
+        vd.description2 = inputdescription2!
+        vd.date2 = inputdate2!
+        vd.company3 = inputcompany3!
+        vd.description3 = inputdescription3!
+        vd.date3 = inputdate3!
+        vd.name = inputuser
+        vd.email = inputemail
+        vd.phone = inputphone
+        vd.address = inputaddress
+        
+    }
+
 
     /*
     // MARK: - Navigation
@@ -40,5 +87,9 @@ class ProfessionalExperienceViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
 
 }
