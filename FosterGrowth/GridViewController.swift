@@ -11,7 +11,7 @@ import UIKit
 class GridViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,SectionsCollectionViewCellDelegate  {
 
     var mainSections = ["beforeInterview", "ipad", "resume", "textbook"]
-    var mainSectionTitles = ["Interview Questions", "Templates", "Resume Builder", "Cover Letters"]
+    var mainSectionTitles = ["Interview Questions", "Templates", "Resume Builder", "Job Listings"]
     
     
     
@@ -51,14 +51,14 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
             
         else if (indexPath.row == 1) {
-            self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
+            self.performSegueWithIdentifier("Templates", sender: indexPath)
         }
         
-        else if (indexPath.row == 2) {
-            self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
+        else if (indexPath.row == 3) {
+            self.performSegueWithIdentifier("JobListings", sender: indexPath)
         }
             
-        else if (indexPath.row == 3) {
+        else if (indexPath.row == 2) {
             self.performSegueWithIdentifier("toResumeTemplates", sender: indexPath)
         }
     }
