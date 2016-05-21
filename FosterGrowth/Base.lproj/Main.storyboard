@@ -262,7 +262,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGF-tk-u50">
                                 <rect key="frame" x="259" y="601" width="76" height="30"/>
                                 <state key="normal" title="Continue &gt;">
-                                    <color key="titleColor" red="0.63019626299999998" green="0.72550111380000004" blue="0.83852193809999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="jDY-UQ-3f0" kind="show" id="ITv-Wu-0SE"/>
